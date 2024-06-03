@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image: url('../img/bg1.jpg');
+    background-image: url('../img/1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -26,6 +26,7 @@ main{
     max-width: 800px;
     margin: auto;
     position: relative;
+    
 }
 
 .caja__trasera{
@@ -35,7 +36,7 @@ main{
     justify-content: center;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background-color: #ff6b00;
+    border-radius: 10%;
 
 }
 

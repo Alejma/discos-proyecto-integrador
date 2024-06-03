@@ -1,103 +1,76 @@
- <body>
+ <nav class="navbar navbar-dark fixed-top  flex-md-nowrap p-0 shadow "style="background-color: #59ab6e ;">
+  <a class="navbar-brand  col-sm-3 col-md-2 mr-0" href="../web/index.php" style="background-color: #59ab6e ;">ADMINISTRACION</a>
   
-  <!-- navLateral -->
-  <section class="full-width navLateral">
-    <div class="full-width navLateral-bg btn-menu"></div>
-    <div class="full-width navLateral-body">
-      <div class="full-width navLateral-body-logo text-center tittles">
-        <i class="zmdi zmdi-close btn-menu"></i> ADMINISTRACION 
-      </div>
-      <figure class="full-width navLateral-body-tittle-menu">
-        <div>
-          <img src="assets/img/avatar-male.png" alt="Avatar" class="img-responsive">
-        </div>
-        <figcaption>
-          <span>
-            Diana isabel<br>
-            <small>Admin</small>
-          </span>
-        </figcaption>
-      </figure>
-      <nav class="full-width">
-        <ul class="full-width list-unstyle menu-principal">
-          <li class="full-width">
-            <a href="../web/index.php" class="full-width">
-              <div class="navLateral-body-cl">
-                <i class="zmdi zmdi-home"></i>
-              </div>
-              <div class="navLateral-body-cr">
-                Pagina princiapl
-              </div>
-            </a>
-          </li>
-          <li class="full-width">
-            <a href="<?php echo getUrl("Usuarios", "Usuarios", "consult") ?>" class="full-width">
-              <div class="navLateral-body-cl">
-                <i class="zmdi zmdi-accounts"></i>
-              </div>
-              <div class="navLateral-body-cr">
-                 Usuarios
-              </div>
-            </a>
-          </li>
-          <li class="full-width divider-menu-h"></li>
-          <li class="full-width">
-            <a href="<?php echo getUrl("Ofertas", "Ofertas", "consult") ?>" class="full-width">
-              <div class="navLateral-body-cl">
-                <i class="zmdi zmdi-washing-machine"></i>
-              </div>
-              <div class="navLateral-body-cr">
-                Productos
-              </div>
-            </a>
-          </li>
-          <li class="full-width divider-menu-h"></li>
-          <li class="full-width">
-            <a href="<?php echo getUrl("Pedidos", "Pedidos", "consult") ?>" class="full-width">
-              <div class="navLateral-body-cl">
-                <i class="zmdi zmdi-shopping-cart"></i>
-              </div>
-              <div class="navLateral-body-cr">
-                Pedidos
-              </div>
-            </a>
-          </li>
-          <li class="full-width divider-menu-h"></li>
-          <li class="full-width">
-            <a href="<?php echo getUrl("Noticias", "Noticias", "consult") ?>" class="full-width">
-              <div class="navLateral-body-cl">
-                <i class="zmdi zmdi-book"></i>
-              </div>
-              <div class="navLateral-body-cr">
-                NOTICIAS
-              </div>
-            </a>
-          </li>
-        </ul>
-      </nav>
+<div class="d-flex flex-row justify-content-center align-items-center">
+      <?php if(isset($_SESSION['user_id'])){
+        ?>
+   					<div class="btn-group mx-5">
+						<button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<?php echo $_SESSION['nombre']; ?>
+						</button>
+						<div class="dropdown-menu dropdown-menu-right">
+							<button class="dropdown-item text-center" type="button" id="modalUpdate" data-toggle="modal" data-target="#exampleModal" data-url="<?php echo getUrl("Usuarios","Usuarios","profile",false,"ajax"); ?>" data-usu_id="<?php echo $_SESSION['user_id']; ?>">Perfil</button>
+							<?php 
+								if($_SESSION['rol']==1){
+									echo "<a href='../../usu/web/index.php'><button class='dropdown-item text-center' type='button'>Página principal</button></a>";
+								}
+							?>
+							<a href="<?php echo getUrl("Acceso","Acceso","logout"); ?>"><button class="dropdown-item text-center" type="button">Cerrar sesión</button></a>
+
+						</div>
+					</div>
+        <?php
+      }else{
+        ?>
+        <li class="main_nav_item"><a href="login.php">Inicio de Sesion</a></li>
+      <?php
+      }
+      ?>
     </div>
-  </section>
-  <!-- pageContent -->
-  <section class="full-width pageContent">
-    <!-- navBar -->
-    <div class="full-width navBar">
-      <div class="full-width navBar-options">
-        <i class="zmdi zmdi-swap btn-menu" id="btn-menu"></i> 
-        <div class="mdl-tooltip" for="btn-menu">ABRIR/CERRAR MENU</div>
-        <nav class="navBar-options-list">
-          <ul class="list-unstyle">
-            
-            <li class="btn-exit" id="btn-exit">
-              <i class="zmdi zmdi-power"></i>
-              <div class="mdl-tooltip" for="btn-exit">Cerrar sesion</div>
-            </li>
-            <li class="text-condensedLight noLink" ><small>Diana isabel</small></li>
-            <li class="noLink">
-              <figure>
-                <img src="assets/img/avatar-male.png" alt="Avatar" class="img-responsive">
-              </figure>
-            </li>
-          </ul>
-        </nav>
-      </div>
+
+
+</nav>
+
+
+<nav id="botonera" class="col-md-2 d-none d-md-block sidebar" style="background-color: #59ab6e ;">
+    <div class="sidebar-sticky">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="index.php">
+            <span data-feather="home"></span>
+            Pagina Principal
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?php echo getUrl('Usuarios', 'Usuarios', 'consult'); ?>">
+            <span data-feather="users"></span>
+            Usuarios
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?php echo getUrl('Oferta', 'Oferta', 'consult'); ?>">
+            <span data-feather="list"></span>
+            Ofertas
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?php echo getUrl('Pqrs', 'Pqrs', 'consult'); ?>">
+            <span data-feather="book"></span>
+            PQRSF
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?php echo getUrl('Estado', 'Estado', 'consult'); ?>">
+            <span data-feather="info"></span>
+            Estado
+          </a>
+        </li>
+      </ul>
     </div>
+  </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        
+      </div>
+

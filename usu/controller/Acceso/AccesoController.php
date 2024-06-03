@@ -5,9 +5,9 @@
 
         public function login(){
             $obj= new AccesoModel;
-            $documento=$_POST['usu_ndocumento'];
+            $correo=$_POST['usu_correo'];
             $contraseña=$_POST['usu_pass'];
-            $sql="SELECT * FROM t_usuario WHERE usu_ndocumento=$documento";
+            $sql="SELECT * FROM t_usuario WHERE usu_correo='$correo'";
             $usuario=$obj->consult($sql);
             if(mysqli_num_rows($usuario)>0){
                 
@@ -20,8 +20,9 @@
                         $_SESSION['nombre']=$user['usu_nombre'];
                         $_SESSION['nombre2']=$user['usu_nombre2'];
                         $_SESSION['apellidos']=$user['usu_apellido'];                  
-                        $_SESSION['correo']=$user['usu_correo'];
                         $_SESSION['rol']=$user['cod_rol'];
+                        $_SESSION['correo']=$user['usu_correo'];
+                        $_SESSION['ntel']=$user['usu_ntelefono'];
                     }
                     $_SESSION['mensaje']="Sesión iniciada exitosamente";
                     redirect("index.php");

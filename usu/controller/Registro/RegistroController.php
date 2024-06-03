@@ -4,9 +4,9 @@
 
         public function getRegister(){
             $obj=new RegistroModel;
-            $sql="SELECT cod_tipo_doc, nom_tipo_doc FROM t_tipodocumento";
+            $sql="SELECT usu_correo FROM t_usuario";
             $tipos_documentos=$obj->consult($sql);
-            include_once '../view/usuarios/register.php';
+            include_once '../web/login.php';
             
         }
         public function postRegister(){
@@ -19,21 +19,20 @@
             }else 
             $snombre=$_POST['usu_nombre2'];
             $apellidos=$_POST['usu_apellido'];
-            $tipo_documento=$_POST['cod_tipo_doc'];
-            $numero_documento=$_POST['usu_ndocumento'];
+            $ntel=$_POST['usu_ntelefono'];
             $correo=$_POST['usu_correo'];
             $contraseña=$_POST['usu_password'];              // se cambió usu_pass
             $confirma_contraseña=$_POST['usu_password2'];    // se cambió confirm
             if(filter_var($correo,FILTER_VALIDATE_EMAIL)){
                 if($confirma_contraseña==$contraseña){
-                    $sql="SELECT usu_correo, usu_ndocumento FROM t_usuario WHERE usu_correo='$correo' OR usu_ndocumento=$numero_documento";
+                    $sql="SELECT usu_correo FROM t_usuario WHERE usu_correo='$correo'";
                     $consulta=$obj->consult($sql);
                     if(mysqli_num_rows($consulta)>0){
                         echo "Ya existe un usuario registrado con este correo/documento";
                         $_SESSION['mensaje']="Ya existe un usuario registrado con este correo";
                     }else{
                         $encriptada=encrypt($contraseña);
-                        $sql="INSERT INTO t_usuario VALUES ($id,'$pnombre','$snombre','$apellidos','$correo','$encriptada',$numero_documento,2,$tipo_documento,1)";
+                        $sql="INSERT INTO t_usuario VALUES ($id,'$pnombre','$snombre','$apellidos','$correo','$ntel','$encriptada',2,1)";
                         $registro=$obj->insert($sql);
                         if($registro){
                             echo "Se registró exitosamente";
@@ -42,7 +41,7 @@
                         }else{
                             echo "Ocurró un error durante el registro, intenta nuevamente.";
                             $_SESSION['mensaje']="Ocurró un error durante el registro, intenta nuevamente.";
-                             echo $tipo_documento; 
+ 
                              dd($sql); 
                         }
                     }

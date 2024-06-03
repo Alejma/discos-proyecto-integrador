@@ -26,9 +26,9 @@
 
 
             if ($_POST['tipopqrsf'] == 5){
-                $sql = "INSERT INTO t_pqrsf VALUES($id,$cod_pqrsf_tipo,$usu_id,6,'$pqrsf_desc','$correo','$nombre', NOW())";
+                $sql = "INSERT INTO t_pqrsf VALUES($id,$cod_pqrsf_tipo,$usu_id,6,'$pqrsf_desc','$correo','$nombre')";
             }else{
-                $sql = "INSERT INTO t_pqrsf VALUES($id,$cod_pqrsf_tipo,$usu_id,5,'$pqrsf_desc','$correo','$nombre', NOW())";
+                $sql = "INSERT INTO t_pqrsf VALUES($id,$cod_pqrsf_tipo,$usu_id,5,'$pqrsf_desc','$correo','$nombre')";
             }
 
             $ejecutar = $obj->update($sql);
@@ -66,9 +66,9 @@
            $id = $obj->autoincrement("t_pqrsf", "cod_pqrsf");
 
            if ($_POST['tipopqrsf'] == 5){
-            $sql = "INSERT INTO t_pqrsf VALUES($id,$cod_pqrsf_tipo,NULL,6,'$pqrsf_desc','$correo','$nombre', NOW())";
+            $sql = "INSERT INTO t_pqrsf VALUES($id,$cod_pqrsf_tipo,NULL,6,'$pqrsf_desc','$correo','$nombre')";
         }else{
-            $sql = "INSERT INTO t_pqrsf VALUES($id,$cod_pqrsf_tipo,NULL,5,'$pqrsf_desc','$correo','$nombre', NOW())";
+            $sql = "INSERT INTO t_pqrsf VALUES($id,$cod_pqrsf_tipo,NULL,5,'$pqrsf_desc','$correo','$nombre')";
         }
        
             $ejecutar = $obj->update($sql);
