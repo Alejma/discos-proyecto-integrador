@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 03-06-2024 a las 21:48:51
+-- Tiempo de generación: 10-06-2024 a las 03:07:32
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -67,10 +67,13 @@ CREATE TABLE `t_oferta` (
 --
 
 INSERT INTO `t_oferta` (`id_oferta`, `usu_id`, `id_estado`, `nom_oferta`, `desc_oferta`, `cupos_oferta`, `fech_ini_oferta`, `fech_fin_oferta`, `imag_oferta`) VALUES
-(1, 13, 3, 'Manzana  X unidad', 'Es uno de los frutos mÃ¡s conocidos, este tipo en particular es de color rojo y tiene un caracterÃ­stico sabor Ã¡cido. Su procedencia es China y su cultivo se da principalmente en climas frÃ­os y templados.\r\n\r\nsi deseas mas informacion contactate con: \r\nNombre campesino: juan jose\r\nTelefono: 3183761393\r\n\r\n', 58, '2024-05-14', '2022-04-29', '../../usu/web/images/12in-Vinyl-LP-Record-Angle.jpg'),
-(10, 13, 3, 'Pera Verde X unidad', 'Es una fruta de color verde, de dulce sabor que se cultiva en un clima frÃ­o y hÃºmedo. Se considera que su origen es asiÃ¡tico aunque hay variedades europeas.\r\n\r\nSu consumo puede darse directamente o por medio de jugos, postres y compotas.', 50, '2024-05-13', '2022-04-30', '../../usu/web/images/nuvista600-2_1_.jpg'),
-(11, 14, 3, 'Papaya ComÃºn X 2000g', 'Es una fruta de gran tamaÃ±o que segÃºn su estado de maduraciÃ³n puede ser de color anaranjado o verde; su interior es anaranjado con un centro de pequeÃ±as semillas de color negro. Su origen debido al clima tropical es africano y sudamericano.\r\n\r\nSu consumo puede ser de manera directa o en jugos, ensaladas y postres.', 1000, '2022-02-15', '2022-05-27', '../../usu/web/images/papaya-maradol-kilo.jpg'),
-(12, 14, 3, 'Papa X 1000g (1KILO)', 'La papa es un tubÃ©rculo de gran consumo a nivel mundial considerado el tercer alimento mÃ¡s importante despuÃ©s del maÃ­z y el trigo. â€¦ Para identificar este tipo de papa se debe tener en cuenta que su color es entre rosado y crema, tambiÃ©n es conocida como papa parda en varias zonas del paÃ­s.', 5700, '2022-02-15', '2022-05-16', '../../usu/web/images/papa-parda.jpg');
+(1, 13, 2, 'Cerati Bocanada Cd Nuevo Cerrado', 'Gustavo Cerati - Bocanada\r\n\r\nEste álbum es una pieza esencial para los amantes de la música y coleccionistas, ofreciendo una experiencia auditiva de alta calidad. Con una selección de formatos que incluyen CD y VINILO, este producto se adapta a las preferencias de reproducción de cada oyente. Los formatos disponibles abarcan desde los clásicos 33 RPM (LPs), 78 RPM, hasta los 45 RPM, cubriendo una amplia gama de épocas y estilos sonoros, desde grabaciones monofónicas hasta estéreo. Los detalles de cada edición reflejan la era de su producción, con características distintivas que pueden incluir cine en blanco y negro y versiones con subtítulos o traducciones específicas. Este artículo es una muestra de cultura musical que enriquecerá su colección personal.', 2, '2024-06-09', '2024-06-29', '../../usu/web/images/Captura de pantalla 2024-06-09 193015.jpg'),
+(10, 13, 3, 'Imagine Dragons Smoke + Mirrors Cd New Cerrado Orig.en Stock', 'Este álbum de 2 discos contiene 29 canciones de heavy metal de Ozzy Osbourne, lanzado en el año 2003.', 50, '2024-06-09', '2024-06-29', '../../usu/web/images/Captura de pantalla 2024-06-09 195836.jpg'),
+(11, 14, 3, 'Leo Dan - Celebrando A Una Leyenda Parte 2 - Disco Cd + Dvd', 'Año de lanzamiento: 2020\r\nIncluye pistas adicionales: No\r\nEste álbum, lanzado en 2020, cuenta con 16 canciones del género Easy Listening del reconocido artista argentino.', 20, '2024-06-09', '2024-06-27', '../../usu/web/images/Captura de pantalla 2024-06-09 193554.jpg'),
+(12, 14, 3, 'Juan Gabriel - Mi Historia Musical 2cd´s + 1 Dvd', 'Este álbum especial contiene 55 canciones de balada ranchera del reconocido artista mexicano, lanzado en 2016.', 57, '2024-06-09', '2024-06-16', '../../usu/web/images/Captura de pantalla 2024-06-09 193851.png'),
+(13, 22, 3, 'Karol G Mañana Sera Bonito / Bichota Season Disco Cd ', 'Karol G - Mañana Sera Bonito / Bichota Season - CD Versión del Álbum Estándar\r\n\r\nEste álbum incluye una selección de canciones de Karol G, ofreciendo una experiencia auditiva de alta calidad. Los formatos disponibles son CD y Vinilo, con opciones que abarcan desde lanzamientos recientes hasta grabaciones clásicas de los años 40 y 50, tanto en mono como en estéreo. Las películas de cine se presentan en blanco y negro, con opciones de subtítulos o traducciones específicas. El contenido musical y su presentación reflejan la época de su producción. Los empaques están diseñados para proteger el producto durante el transporte.', 20, '2024-06-09', '2024-06-29', '../../usu/web/images/Captura de pantalla 2024-06-09 194453.png'),
+(14, 22, 3, 'Slipknot - Homonimo - Disco Cd (14 Canciones)', 'El disco homónimo de Slipknot es una joya del heavy metal que no puede faltar en tu colección. Con un total de 14 canciones, este CD te transportará a un mundo lleno de energía y potencia. El álbum, lanzado en 1999 por Warner Music, captura la esencia única de la banda en su máximo esplendor. Desde los primeros acordes, te sumergirás en un viaje musical intenso y emocionante. Cada canción es una explosión de riffs poderosos, baterías frenéticas y voces desgarradoras. Si eres amante del género, este disco es imprescindible. No pierdas la oportunidad de adquirirlo y disfrutar de la magia de Slipknot en cada nota.', 20, '2024-06-09', '2024-06-29', '../../usu/web/images/Captura de pantalla 2024-06-09 194904.jpg'),
+(15, 22, 3, 'System Of A Down', 'en versiones monofónicas o estéreo. Las películas de cine incluidas pueden ser en blanco y negro y contar con subtítulos o traducciones específicas. El contenido musical y la presentación varían según la época de lanzamiento. La responsabilidad sobre el conocimiento del contenido y la presentación recae en el comprador. Las consultas sobre música específica son bienvenidas para su inclusión en la plataforma. Se permite la selección de hasta cinco unidades de discos para agrupar en una sola publicación.', 5, '2024-06-09', '2024-06-30', '../../usu/web/images/Captura de pantalla 2024-06-09 195207.jpg');
 
 -- --------------------------------------------------------
 
@@ -105,7 +108,8 @@ INSERT INTO `t_pqrsf` (`cod_pqrsf`, `cod_pqrsf_tipo`, `usu_id`, `id_estado`, `pq
 (10, 3, 22, 5, 'egergemgdskfmds', 'juanjose@gmail.com', 'jj Arias'),
 (11, 2, 22, 5, 'njh jg g ', 'juanjose@gmail.com', 'jj Arias'),
 (12, 3, 22, 5, 'hola', 'juanjose@gmail.com', ''),
-(13, 3, NULL, 5, 'sdggesdgsgsdg', 'juanjose@gmail.com', 'bdfbdfbdf');
+(13, 3, NULL, 5, 'sdggesdgsgsdg', 'juanjose@gmail.com', 'bdfbdfbdf'),
+(14, 5, 22, 6, ',-lm-k-kl-kl.k.j', 'juanjose@gmail.com', '');
 
 -- --------------------------------------------------------
 
@@ -146,7 +150,7 @@ CREATE TABLE `t_rol` (
 
 INSERT INTO `t_rol` (`cod_rol`, `desc_rol`) VALUES
 (1, 'Administrador '),
-(2, 'Campesino');
+(2, 'Usuario');
 
 -- --------------------------------------------------------
 
@@ -172,24 +176,25 @@ CREATE TABLE `t_usuario` (
 
 INSERT INTO `t_usuario` (`usu_id`, `usu_nombre`, `usu_nombre2`, `usu_apellido`, `usu_correo`, `usu_ntelefono`, `usu_pass`, `cod_rol`, `id_estado`) VALUES
 (3, 'Luis', 'Fernando', 'Ante', 'lfante@misena.edu.co', 10000, '$2y$10$f1dsNo1mH3394XUFnEaR/OUMIj3CiFp1UwrpbMFBv2lxfHfs0IFDS', 2, 2),
-(5, 'Jhan', 'Sebastian', 'Rodriguez Ospina', 'anfredo@gmail.com', 1000, '$2y$10$yooigFj79l.lWY8eTgrUMunGXFVgPCkZKgGIvo7Q5iGef3HGSAIQC', 2, 1),
-(6, 'hola', 'a', 'a', 'daniela@gmail.com', 1000, '$2y$10$7IdYBgwqUacYfDVdWhDs5OpF.BpjZL0e.iw.1gzhw0NfMCc8m7g8m', 1, 1),
+(5, 'Jhan', 'Sebastian', 'Rodriguez Ospina', 'anfredo@gmail.com', 1000, '$2y$10$yooigFj79l.lWY8eTgrUMunGXFVgPCkZKgGIvo7Q5iGef3HGSAIQC', 2, 2),
+(6, 'hola', 'a', 'a', 'daniela@gmail.com', 1000, '$2y$10$7IdYBgwqUacYfDVdWhDs5OpF.BpjZL0e.iw.1gzhw0NfMCc8m7g8m', 1, 2),
 (7, 'Sofía', 'Juliana', 'Perez', 'sofi@hotmail.com', 111, '$2y$10$HMSYkSZ4v/qsUbfREQZYy.IbuQ3Rai5LqAxfwBv81BMV.Cls8iCEC', 2, 2),
-(8, 'Jhan', 'Sebastia', 'Rodriguez Ospina', 'sebibof@gmail.com', 1111, '$2y$10$tvNn.OKJFSCbd1IOHVf77u.JFlAYfGsfNfrbL6JHvGkkXeHHgIT/u', 1, 1),
-(9, 'Juan', 'José', 'Marín Arias', 'juanjis@gmail.com', 11111, '$2y$10$PcbFcYlY.OXISvfgIGQujecgioFKBA2ovGQsxCy42ry6zS5gjag3y', 2, 1),
+(8, 'Jhan', 'Sebastia', 'Rodriguez Ospina', 'sebibof@gmail.com', 1111, '$2y$10$tvNn.OKJFSCbd1IOHVf77u.JFlAYfGsfNfrbL6JHvGkkXeHHgIT/u', 1, 2),
+(9, 'Juan', 'José', 'Marín Arias', 'juanjis@gmail.com', 11111, '$2y$10$PcbFcYlY.OXISvfgIGQujecgioFKBA2ovGQsxCy42ry6zS5gjag3y', 2, 2),
 (10, 'Alad', 'Carandi', 'Pezcuen', 'aladinito@gmai.com', 1111100000, '$2y$10$lxgowXPhnFcCYOpRqER3ROyuNwmFvw0G0rlsuAfyg.6UBkaYn/bEu', 1, 2),
 (11, 'Probando', 'Juliï¿½n', 'Mesias', 'probando@hotmail.es', 0, '$2y$10$zuHA0ZGDtHIAbeRl33GAz.U.osBcdLuQJpVacxAsxmHM3LdW7LN4.', 1, 2),
-(12, 'Angi', 'Camila', 'Santacru', 'santacruzangie67@gmail.com', 123147, '$2y$10$MymfQz3bz5rB.Mf4uTyDau2klYCYYXcj.SSYypVQ0Q7/Kq58s/r9O', 2, 1),
-(13, 'Angie', 'Camila2', 'admin', 'usu@gmail.com', 123654, '$2y$10$vYWgtfOHUIUm8YH/VnmmKuJpRxB0HUSzjsxNpkIWsHzorE/vMldhG', 1, 1),
-(14, 'juan', 'jose', 'marin', 'jjmarin465@misena.edu.co', 45665, '$2y$10$YxQEOxWZHm0meRCs4YPDe.K.wwqZFcKnYI/CPXamq08RwBT3yEMD6', 1, 1),
+(12, 'Angi', 'Camila', 'Santacru', 'santacruzangie67@gmail.com', 123147, '$2y$10$MymfQz3bz5rB.Mf4uTyDau2klYCYYXcj.SSYypVQ0Q7/Kq58s/r9O', 2, 2),
+(13, 'Angie', 'Camila2', 'admin', 'usu@gmail.com', 123654, '$2y$10$vYWgtfOHUIUm8YH/VnmmKuJpRxB0HUSzjsxNpkIWsHzorE/vMldhG', 1, 2),
+(14, 'juan', 'jose', 'marin', 'jjmarin465@misena.edu.co', 45665, '$2y$10$YxQEOxWZHm0meRCs4YPDe.K.wwqZFcKnYI/CPXamq08RwBT3yEMD6', 1, 2),
 (15, 'juan', 'vfbdfb', 'bdfbdfb', 'jj1@hotmail.com', 7855, '$2y$10$joE9GktY24res7ZQyocFLeHUiiAjL6.dVTS/ogORqX0XbEcUOqwPi', 2, 2),
-(16, 'geggeg', 'grgreg', 'gregrgr', 'juanjosemarinarias999@gmail.co', 5665, '$2y$10$PkORwCvblAl/z49IZKc5DOVicMWSWp7NYAsJ1dtxRwz02X031QWmS', 2, 1),
-(17, 'tarianaa', 'lissettea', 'ruiza', 'tariana9000@gmail.com', 1234565858, '$2y$10$XnEmCk6GfDW6bjpw7MyOp.D.5WR.a9fsuSQIZzqIcaXzkK1JVHha.', 2, 1),
-(18, 'camilo', 'lissette', 'marin', 'camilo123@gmail.com', 318376, '$2y$10$8EgWSdtpForkgZA8vJvbw./o5U8FZu/tKyShRvshDktRiY4wxbRQW', 2, 1),
-(19, 'dgfgdf', 'dgfdfg', 'dfgdf', 'juanjj123@gmail.com', 18168, '$2y$10$pMVd1UC5KfwjHrxg891fK.qCX7CuldjW8um2NixX85WoIXNmJ.vsC', 2, 1),
-(20, 'fgdgg', 'dfgfgf', 'gdfgdf', 'dgfgdfgfd@gmail.com', 57876, '$2y$10$wuZ7bsv9nnHS81TieIVNtOo.IikSpcut26Ovwwm9DM0Cn1ZA9vO4S', 2, 1),
-(21, 'vdsvdsv', 'dvsdv', 'vvsdv', 'jjmarin111@gmail.com', 447558, '$2y$10$Wxjek6/1JETsbWRzeDQSgezobYqlPEgi1DKs63ItQxUEyCwebktke', 2, 1),
-(22, 'jj', 'Juan', 'Arias', 'juanjose@gmail.com', 2147483647, '$2y$10$LggkpekUtAmhQWWtojMmjuIadG2AwPYdrQ9/RvhH.G59n38r17IUK', 1, 1);
+(16, 'geggeg', 'grgreg', 'gregrgr', 'juanjosemarinarias999@gmail.co', 5665, '$2y$10$PkORwCvblAl/z49IZKc5DOVicMWSWp7NYAsJ1dtxRwz02X031QWmS', 2, 2),
+(17, 'tarianaa', 'lissettea', 'ruiza', 'tariana9000@gmail.com', 1234565858, '$2y$10$XnEmCk6GfDW6bjpw7MyOp.D.5WR.a9fsuSQIZzqIcaXzkK1JVHha.', 2, 2),
+(18, 'camilo', 'lissette', 'marin', 'camilo123@gmail.com', 318376, '$2y$10$8EgWSdtpForkgZA8vJvbw./o5U8FZu/tKyShRvshDktRiY4wxbRQW', 2, 2),
+(19, 'dgfgdf', 'dgfdfg', 'dfgdf', 'juanjj123@gmail.com', 18168, '$2y$10$pMVd1UC5KfwjHrxg891fK.qCX7CuldjW8um2NixX85WoIXNmJ.vsC', 2, 2),
+(20, 'fgdgg', 'dfgfgf', 'gdfgdf', 'dgfgdfgfd@gmail.com', 57876, '$2y$10$wuZ7bsv9nnHS81TieIVNtOo.IikSpcut26Ovwwm9DM0Cn1ZA9vO4S', 2, 2),
+(21, 'vdsvdsv', 'dvsdv', 'vvsdv', 'jjmarin111@gmail.com', 447558, '$2y$10$Wxjek6/1JETsbWRzeDQSgezobYqlPEgi1DKs63ItQxUEyCwebktke', 2, 2),
+(22, 'jj', 'Juan', 'Arias', 'juanjose@gmail.com', 2147483647, '$2y$10$LggkpekUtAmhQWWtojMmjuIadG2AwPYdrQ9/RvhH.G59n38r17IUK', 1, 2),
+(23, 'marin', 'jj', 'fwqfwq', 'jjj@gmail.com', 2147483647, '$2y$10$QqU1hhhFUstGQPCagoPpreIsKM3h3JuVVGOM1/Owp6BkTWll6GEEm', 2, 1);
 
 --
 -- Índices para tablas volcadas
@@ -252,13 +257,13 @@ ALTER TABLE `t_estado`
 -- AUTO_INCREMENT de la tabla `t_oferta`
 --
 ALTER TABLE `t_oferta`
-  MODIFY `id_oferta` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_oferta` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT de la tabla `t_pqrsf`
 --
 ALTER TABLE `t_pqrsf`
-  MODIFY `cod_pqrsf` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `cod_pqrsf` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT de la tabla `t_pqrsftipo`
